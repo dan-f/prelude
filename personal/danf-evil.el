@@ -212,7 +212,7 @@ Copied from evil-delete implementation."
 
   "g" 'magit-status
   "q" 'evil-quit
-  "o" 'occur
+  "o" 'helm-occur
   "m" 'compile
   "k" 'kill-this-buffer
   "K" 'kill-buffer-and-window
@@ -234,3 +234,5 @@ Copied from evil-delete implementation."
 
 ;;; Last, but not least...
 (evil-mode 1)
+
+(provide 'danf-evil)

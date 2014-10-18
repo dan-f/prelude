@@ -178,3 +178,5 @@ right)"
 
 (defun snippet--function-name ()
   (if (js-function-declaration-p) "name" ""))
+
+(provide 'danf-funcs)
