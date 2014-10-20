@@ -206,9 +206,10 @@ Copied from evil-delete implementation."
   "s" 'split-eshell
 
   "pa" 'projectile-ag
-  "pb" 'projectile-switch-to-buffer
-  "pf" 'projectile-find-file
-  "pp" 'projectile-switch-project
+  "ph" 'helm-projectile
+  "pb" 'helm-projectile-switch-to-buffer
+  "pf" 'helm-projectile-find-file
+  "pp" 'helm-projectile-switch-project
 
   "g" 'magit-status
   "q" 'evil-quit
