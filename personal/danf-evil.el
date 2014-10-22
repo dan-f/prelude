@@ -27,6 +27,10 @@
 (define-key evil-normal-state-map (kbd "Y") (kbd "y$"))
 
 ;;; Remove useless vim bindings
+;; currently evil-ret doesn't obey electric-indent-mode, so we disable it in insert mode
+(define-key evil-insert-state-map [remap newline] 'newline)
+(define-key evil-insert-state-map [remap newline-and-indent] 'newline-and-indent)
+
 (define-key evil-insert-state-map (kbd "C-k") nil)
 (define-key evil-motion-state-map (kbd "RET") nil) ;; This somehow messes up RET in normal state, so...:
 (define-key evil-normal-state-map (kbd "RET") 'evil-ret)
